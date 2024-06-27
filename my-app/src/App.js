@@ -1,7 +1,6 @@
 
-import { useContext } from 'react';
+
 import './App.css';
-import {  FoodContext} from "./Context"
 import {Routes , Route} from "react-router-dom"
 import { HomePage } from './pages/homePage';
 import { SingleCategory } from './pages/singleCategoryPg';
