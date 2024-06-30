@@ -42,7 +42,7 @@ const getUniqueCategory = getAllCategory.filter((item , index)=> getAllCategory.
         </div>
         <div className="itemsListHome">
             {
-                getItems.map((e)=><div id={e.id}>
+                getItems.map((e)=><div onClick={()=>navigate(`/restaurants/${e.restroName}`)} id={e.id}>
                     <img src={e.image} alt=""></img>
                     <p>{e.restroName}</p>
                     <p>{e.rating}</p>
