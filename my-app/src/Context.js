@@ -6,17 +6,13 @@ export const FoodContext = createContext()
 export const Contextprovider = ({children})=>{
     const [getCategoryArr , setCategoryArr] = useState([])
     const [getItems , setItems] = useState(DataArray)
+    
 
-    const GetSortHandler =(value)=>{
-        console.log(value)
-
-        if(value === "rating")
-
-    }
+   
     
     
 
-    return(<FoodContext.Provider value={{ getCategoryArr , setCategoryArr , getItems , setItems  , GetSortHandler}}>
+    return(<FoodContext.Provider value={{ getCategoryArr , setCategoryArr , getItems , setItems  }}>
         {children}
     </FoodContext.Provider>)
 }
