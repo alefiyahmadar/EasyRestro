@@ -48,9 +48,10 @@ const RemoveFilterHandler =(e)=>{
 const InputHandler = (Input) =>{
 
     console.log(Input)
-    console.log(dataB)
-    const getFilter = dataB.items.filter((e)=>e.name ==! Input)
+    const getVegFilter = isClickedVeg ? dataB.items.filter((e)=>e.is_vegetarian === true) : dataB.items
+    const getFilter = getVegFilter.filter((e)=>e.name.toLowerCase().includes(Input.toLowerCase()))
     console.log(getFilter)
+    setRestro({...getRestro , items:getFilter})
 }
 
 

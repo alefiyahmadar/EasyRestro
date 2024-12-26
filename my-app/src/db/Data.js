@@ -17,7 +17,8 @@ items:[
         price:200,
         img:"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/FOOD_CATALOG/IMAGES/CMS/2024/5/8/b6ae617a-e655-424b-9d50-b82e9ca1d2b9_db2b8eb3-8e69-409f-a7f6-38c75d6ab6c3.jpg",
         
-        is_vegetarian: true
+        is_vegetarian: true,
+    
 
 
     }, {
